@@ -13,13 +13,10 @@ function send_message($id, $message, $progress) {
    flush();
 }
 
-$fileName      = "SAP_FULL.txt";
+$fileName      = "yourfile.txt";
 $linhaCarga    = array();
 $arrValuesDoc  = array();
 $documentos    = array();
-$sqlDocumentos = 'INSERT INTO dessm001.destb62_documentos VALUES';
-$arrValuesObj = array();
-$sqlObjetivos = 'INSERT INTO dessm001.destb027_objetivos_aval (comentario_objetivo,de_objetivo,nu_criticidade,nota_objetivo,nu_publi_alvo,nu_documento)VALUES';
 $linhas = explode("\n", file_get_contents($fileName));
 $arrDados = array();
 $countDados = count($linhas);
